@@ -1,0 +1,159 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif; /* Una fuente más elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo suave, no demasiado colorido */
+    color: #333; /* Color de texto más oscuro para elegancia */
+}
+
+header {
+    background-color: #002b5c; /* Azul marino oscuro para un toque elegante */
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    border-bottom: 3px solid #d9a760; /* Una línea dorada suave debajo del header */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 2em;
+    color: #002b5c; /* Mantener el azul marino para subtítulos */
+}
+
+.plates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Más espacio entre tarjetas para un diseño limpio */
+    padding: 30px;
+}
+
+.plate {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 270px;  /* Un poco más ancho para más espacio visual */
+    height: 400px; /* Un poco más alto para mejor presentación */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más suave y elegante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease; /* Añadido efecto elegante */
+}
+
+.plate:hover {
+    transform: translateY(-10px); /* Efecto elegante al pasar el mouse */
+}
+
+.plate img {
+    width: 100%;
+    height: 180px; /* Altura ajustada para mayor protagonismo */
+    object-fit: cover;  
+    border-radius: 10px;
+    margin-bottom: 15px; /* Espacio más elegante debajo de la imagen */
+}
+
+.plate h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #002b5c; /* Azul marino para los títulos */
+}
+
+.plate p {
+    font-size: 1em;
+    color: #555; /* Color más suave para el texto */
+    flex-grow: 1;
+    margin-bottom: 15px; /* Más espacio entre el texto y el final de la tarjeta */
+}
+
+.filters {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filters button {
+    background-color: #002b5c; /* Azul marino para los botones */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 30px; /* Bordes redondeados para un look más moderno */
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #d9a760; /* Cambia a dorado suave al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .plates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plate {
+        width: 85%; /* Se ajusta al 85% del ancho de la pantalla en móviles */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .plate {
+        width: 270px; /* Mantiene el tamaño fijo en tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .plate {
+        width: 270px; /* Mantiene el tamaño fijo en pantallas grandes */
+    }
+}
+
+footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 3px solid #d9a760; /* Línea dorada en el footer también */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para el botón de hacer pedidos */
+.order-button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.order-button {
+    background-color: #d9a760; /* Color dorado suave */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+}
+
+.order-button:hover {
+    background-color: #c4944e; /* Color un poco más oscuro al pasar el ratón */
+}
